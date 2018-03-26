@@ -1,0 +1,44 @@
+.rateusbox {
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+    z-index: 1001;
+    border: rgb(240, 240, 240) 1px solid;
+    border-radius: 5px;
+    box-shadow: 2px 2px lightgray;
+    background: rgba(240, 240, 240, 0.8);
+    padding: 20px;
+    width: 300px;
+    height: 140px;
+    text-align: center;
+}
+.rateustext {
+    font-size: 1.1em;
+}
+
+.stars {
+    margin-top: -20px;
+    display: inline-block;
+}
+  
+input.star { 
+    display: none; 
+}
+
+label.star {
+    float: right;
+    font-size: 35px;
+    color: rgb(102, 0, 0);
+    transition: all .2s;
+}
+  
+input.star:checked ~ label.star:before {
+    content: '\2605';
+}
+input.star:hover ~ label.star:before {
+    content: '\2605';
+}
+  
+label.star:before {
+    content: '\2606';
+}
